@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+  <title>FARMERS' POINT</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/styles-main.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+
+  <style>
+    a {
+      color: black;
+      font-weight: bold;
+    }
+
+    table {
+      margin-right: 50px;
+      text-align: left;
+    }
+
+    p {
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+    }
+
+    h6.us {
+      font-size: xx-large;
+      color: rgb(252, 252, 252);
+      text-align: right;
+    }
+
+    h2.us {
+      font-size: 70px;
+      color: rgb(255, 255, 255);
+      text-align: right;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="sequence">
+
+    <div class="seq-preloader">
+      <svg width="39" height="16" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg" class="seq-preload-indicator">
+        <g fill="#F96D38">
+          <path class="seq-preload-circle seq-preload-circle-1"
+            d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z" />
+          <path class="seq-preload-circle seq-preload-circle-2"
+            d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z" />
+          <path class="seq-preload-circle seq-preload-circle-3"
+            d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z" />
+        </g>
+      </svg>
+    </div>
+
+  </div>
+
+  <div class="logo">
+    <h1>Farmers' point</h1>
+    <h2>FP</h2>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#1"><img src="assets/images/icon-1.png" alt="img" width="40"> <em>Homepage</em></a></li>
+     
+      <li><a href="#4"><img
+            src="data:image/png;base64,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"
+            alt="img" width="100px">
+          <em>Useful Links</em></a></li>
+    </ul>
+  </nav>
+
+  <div class="slides">
+    <div class="slide" id="1">
+      <div id="slider-wrapper">
+        <div id="image-slider">
+          <ul>
+            <li class="active-img">
+              <div class="slide-caption">
+                <h6 class="us">For the farmers...</h6>
+                <h2 class="us">Farmers'<br>Point</h2>
+              </div>
+            </li>
+            <li>
+              <div class="slide-caption">
+                <h6 class="us">one stop</h6>
+                <h2 class="us"> for all <br> your links</h2>
+              </div>
+            </li>
+            <li>
+              <div class="slide-caption">
+                <h6 class="us">Links for</h6>
+                <h2 class="us">Seeds, fertilizers<br>& pesticides</h2>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="thumbnail">
+          <ul>
+            <li class="active"><img src="assets/images/farmer1.jpg" alt="Earth" /></li>
+            <li><img src="assets/images/farmer2.jpg" alt="Meeting" /></li>
+            <li><img src="assets/images/farmer3.jpg" alt="Smart" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="slide" id="4">
+      <div class="content fourth-content">
+     
+
+        <div>
+          <table>
+            <tr>
+              <td>
+                <table>
+
+                  <tr>
+                    <th>
+                      <p>S.No</p>
+                    </th>
+                    <th>
+                      <p> . Links for Fertilzers</p>
+                    </th>
+                  </tr>
+
+                  <tr>
+                    <td>1</td>
+                    <td><a href="https://dir.indiamart.com/impcat/fertilizer.html">INDIAMART</a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><a href="https://www.bighaat.com/collections/plant-nutrition">BIGHAAT</a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><a href="https://farmagritech.com/product-category/fertilizers/">FARMAGRITECH</a></td>
+                  </tr>
+
+
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <th>
+                      <p>S.No</p>
+                    </th>
+                    <th>
+                      <p> . Links for Tools and Machinery</p>
+                    </th>
+                  </tr>
+
+                  <tr>
+                    <td>1</td>
+                    <td><a href="https://dir.indiamart.com/impcat/agricultural-equipment.html">INDIAMART</a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><a href="https://www.bighaat.com/collections/agri-implements">BIGHAAT</a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><a href="https://www.tractorjunction.com/tools/">TRACTORJUNCTION</a></td>
+                  </tr>
+
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table>
+
+                  <tr>
+                    <th>
+                      <p>S.No</p>
+                    </th>
+                    <th>
+                      <p> . Links for Seeds</p>
+                    </th>
+                  </tr>
+
+                  <tr>
+                    <td>1</td>
+                    <td><a href="https://agribegri.com/buy-cheap-agricultural-seeds-online-in-india.php">AGRIBEGRI</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><a href="https://dir.indiamart.com/impcat/agriculture-seeds.html">INDIAMART</a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><a href="https://agrikendra.com/">AGRIKENDRA</a></td>
+                  </tr>
+
+                </table>
+              </td>
+              <td>
+                <table>
+
+                  <tr>
+                    <th>
+                      <p>S.No</p>
+                    </th>
+                    <th>
+                      <p> . Links for Pesticides</p>
+                    </th>
+                  </tr>
+
+                  <tr>
+                    <td>1</td>
+                    <td><a href="https://www.bighaat.com/collections/crop-protection">BIGHAAT</a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><a href="https://krushikendra.com/pesticides_online">KRUSHIKENDRA</a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><a href="https://farmagritech.com/product-category/pesticides/insecticides/">FARMAFRITECH</a>
+                    </td>
+                  </tr>
+
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table>
+
+                  <tr>
+                    <th>
+                      <p>S.No</p>
+                    </th>
+                    <th>
+                      <p> . Links to Government Portals</p>
+                    </th>
+                  </tr>
+
+                  <tr>
+                    <td>1</td>
+                    <td><a href="https://www.india.gov.in/topics/agriculture">NATIONAL PORTAL FOR AGRICULTURE</a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><a href="https://farmer.gov.in/">FARMERS' PORTAL</a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><a href=" http://agricoop.nic.in/">AGRICOOP</a></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><a href="https://www.enam.gov.in/web/">ENAM</a></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><a href="https://pmfby.gov.in/">PMFBY (BIMA YOJNA)</a></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td><a href="http://dackkms.gov.in/">KISAN KNOWLEDGE MANAGEMENT SYSTEM</a></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td><a href="http://kvk.icar.gov.in/">KRISHI VIGYAN KENDRA</a></td>
+                  </tr>
+
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="resources/jquery/jquery.min.js"></script>
+  <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Extra Scripts -->
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/accordations.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      // navigation click actions 
+      $('.scroll-link').on('click', function (event) {
+        event.preventDefault();
+        var sectionID = $(this).attr("data-id");
+        scrollToID('#' + sectionID, 750);
+      });
+      // scroll to top action
+      $('.scroll-top').on('click', function (event) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+      });
+      // mobile nav toggle
+      $('#nav-toggle').on('click', function (event) {
+        event.preventDefault();
+        $('#main-nav').toggleClass("open");
+      });
+    });
+    // scroll function
+    function scrollToID(id, speed) {
+      var offSet = 0;
+      var targetOffset = $(id).offset().top - offSet;
+      var mainNav = $('#main-nav');
+      $('html,body').animate({ scrollTop: targetOffset }, speed);
+      if (mainNav.hasClass("open")) {
+        mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+        mainNav.removeClass("open");
+      }
+    }
+    if (typeof console === "undefined") {
+      console = {
+        log: function () { }
+      };
+    }
+  </script>
+
+</body>
+
+</html>
